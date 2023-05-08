@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    background-color: #ECB365;
+    align-items: center;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    
+    
+}
+
+.logo {
+    padding: 0.4rem;
+    color: var(--clr-primary);
+}
+
+.nav_list {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem;
+}
+
+.nav_item {
+    font-size: 1.5rem;
+    color: var(--clr-primary);
+    padding: 0.8rem;
+}
+
+.nav_item:hover {
+    cursor: pointer;
+
+}
