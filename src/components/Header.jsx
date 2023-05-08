@@ -9,7 +9,7 @@ const Header = () => {
                 <h2>NPTEL</h2>
             </div>
             <ul className={classes.nav_list}>
-                <li className={classes.nav_item} title="Home">
+                <li className={classes.nav_item} title="Home ">
                 {/* <FontAwesomeIcon icon={faHouse} /> */}
                 <i class="fa-solid fa-house"></i>
                 </li>
