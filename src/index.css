@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
 
 :root {
-  --clr-primary: #04293A;
-  --clr-secondary: #064663;
-  --text-primary: #ECB365;
+  --clr-primary: #fff;
+  --clr-secondary: #000;
+  --text-primary: #000;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  color: #000;
 }
 
 body {
@@ -18,22 +19,51 @@ body {
   color: #fff;
 }
 
-.button {
-  width: 4rem;
-  height: 2rem;
-  background-color: #ECB365;
-  border-radius: 10px;
-  border: none;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
+.background {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  opacity: 30%;
+  filter: grayscale(100%);
 }
 
-.button:hover {
+.title {
+  text-align: center;
+  font-family: 'Bodoni Moda', serif;
+  margin: 2rem;
+  font-size: 3rem;
+}
+
+.title > h1 {
+  font-weight: 700;
+}
+
+.header {
+  text-align: center;
+  margin: 2rem;
+  font-size: 3rem;
+}
+
+.title__btn {
+  width: 40rem;
+  height: 5rem;
+  padding: 1rem;
+  font-weight: 600;
+  font-family: 'Bodoni Moda', serif;
+  background-color: #fff;
+  border: #000 solid 0.5px;
+  font-size: 1.7rem;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 10px 10px;
+}
+
+.title__btn:hover {
   cursor: pointer;
   background-color: var(--clr-primary);
-  border: 2px solid #ECB365;
-  color: #ECB365;
-  width: 4.3rem;
+  color: #fff;
+  background-color: #000;
   font-size: 1.2rem;
+  box-shadow: 5px 10px #fff;
 }
