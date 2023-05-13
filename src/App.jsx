@@ -1,20 +1,17 @@
-import Header from './components/Header';
-import nptelImg from './assets/nptel-logo.jpg';
-import Layout from './components/Layout'
-import LoginForm from './components/LoginForm';
-
+import gradient from './assets/grad3.jpg';
 
 function App() {
-  
-
   return (
     <>
-      <Header/>
-      <div>
-        <LoginForm/>
+      <img src={gradient} alt="" className="background" />
+      <div className="title">
+        <h1>NPTEL Management System</h1>
+      </div>
+      <div style={{ textAlign: 'center', margin: '5rem' }}>
+        <button className="title__btn">Sign In</button>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
